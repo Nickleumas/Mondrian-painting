@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 200vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 419px;
+      grid-template-rows: 414px 325px;
+      background-color: #000;
+      gap: 9px;
+    }
+    .first {
+      width: 320px;
+      height: 414px;
+      background-color: #E72F24;
+    }
+    .second, .third, .fourth {
+      background-color: #F0F1EC;
+    }
+    .second {
+      width: 419px;
+      height: 414px;
+    }
+    .third {
+      display: flex;
+      flex-direction: column;
+      height: 325px;
+      background-color: #000;
+    }
+    .third1 {
+      height: 296px;
+      width: 320px;
+      background-color: #F0F1EC;
+      margin-bottom: 9px;
+    }
+    .third2 {
+      height: 20px;
+      width: 320px;
+      background-color: #F0F1EC;
+    }
+    .fourth {
+      height: 325px;
+      display: flex;
+      flex-direction: row;
+      gap: 9px;
+      background-color: #000;
+    }
+    .fourth1 {
+      height: 325px;
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+    }
+    .fourth1-a {
+      height: 296px;
+      width: 360px;
+      background-color: #F0F1EC;
+      margin-bottom: 9px;
+    }
+    .fourth1-b {
+      height: 20px;
+      width: 360px;
+      display: flex;
+      gap: 9px;
+      flex-direction: row;
+      background-color: #000;
+    }
+    .fourth1-bI {
+      height: 20px;
+      width: 198px;
+      background-color: #F9D01E;
+    }
+    .fourth1-bII {
+      height: 20px;
+      width: 153px;
+      background-color: #232629;
+    }
+    .fourth2 {
+      height: 325px;
+      width: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: #000;
+      
+    }
+    .fourth2-a {
+      height: 130px;
+      width: 50px;
+      background-color: #004592;
+      
+    }
+    .fourth2-b {
+      height: 184px;
+      width: 50px;
+      background-color: #F0F1EC;
+    }
+    p {
+      text-align: end;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <H1><u>Mandorian painting</u></H1>
+ <div class="container">
+   <div class="first"></div>
+   <div class="second"></div>
+   <div class="third">
+    <div class="third1"></div>
+    <div class="third2"></div>
+   </div>
+   <div class="fourth">
+    <div class="fourth1">
+      <div class="fourth1-a"></div>
+      <div class="fourth1-b">
+        <div class="fourth1-bI"></div>
+        <div class="fourth1-bII"></div>
+      </div>
+    </div>
+    <div class="fourth2">
+      <div class="fourth2-a"></div>
+      <div class="fourth2-b"></div>
+    </div>
+   </div>
+ </div>
+<div>
+  <p><i>By Nick Sam</i></p>
+</div>
+
+</body>
+
+</html>
